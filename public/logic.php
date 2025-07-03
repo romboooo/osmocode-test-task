@@ -24,7 +24,6 @@
             }
 
             if ( $closeBracketPosition == -200){
-                echo "syntax Error: there aren't closure bracket '>'";
                 return ['err'];
             }
 
