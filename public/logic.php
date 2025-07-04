@@ -7,7 +7,7 @@
 
             $openBracketPosition = strpos($line, "<");
             $enclosureCounter = 0;
-            $closeBracketPosition = -200;
+            $closeBracketPosition = -400;
 
             for ($i = $openBracketPosition; $i < strlen($line); ++$i) {
                 
@@ -23,7 +23,7 @@
                 }
             }
 
-            if ( $closeBracketPosition == -200){
+            if ( $closeBracketPosition == -400){
                 return ['err'];
             }
 
