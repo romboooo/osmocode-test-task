@@ -28,17 +28,6 @@
             $e->getMessage();
         }
 
-        $query = "select * from bars;";
-
-        try{
-            $out = $db->prepare($query);
-            $out->execute();
-            $result = $out->fetchAll();
-            print_r($result);
-        } catch (Exception $e){
-            $e->getMessage();
-        }
-
         $db = null;
 
     }
