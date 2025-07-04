@@ -19,3 +19,16 @@
 Пожелания
 Выложите код скрипта на github, либо пришлите его как zip-архив.
 Поясните, сколько на каждую часть задания ушло времени.
+
+
+------------------------------------------------------------------------------------------
+
+Инициализация бд:
+
+CREATE DATABASE osmocode-task-db;
+
+CREATE TABLE bars (
+    id INT AUTO_INCREMENT PRIMARY KEY,  
+    bar text not null,
+    UNIQUE KEY unique_bar (bar(255))
+);
