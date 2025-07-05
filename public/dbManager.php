@@ -9,7 +9,8 @@
         $password = $config['db']['password'];
         
         try{
-            $dbh = new PDO('mysql:host=localhost;dbname=osmocode_task_db',$username,$password);
+            $dsn = "mysql:host=" . $servername . ';dbname=' . $dbname;
+            $dbh = new PDO($dsn,$username,$password);
         }catch (Exception $e){
             $e->getMessage();
         }
